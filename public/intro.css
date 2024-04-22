@@ -1,0 +1,68 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    /*Page title*/
+  h1{
+    font-family: monospace, 'Andalé Mono';
+    text-align: center;
+    color: rgb(255, 252, 246);
+    font-size: 3.5vw ;
+    letter-spacing: 3vw;
+   
+  }
+    /*The table that the buttons are placed in*/
+  table { 
+    text-align : center ; 
+    font-weight: bold; 
+    border-spacing: 8vw; 
+      border-collapse: separate;
+      margin-left: auto;
+     margin-right: auto;
+  } 
+    /*Buttons login n signup*/
+  .btn{
+    font-family: monospace, 'Andalé Mono';
+    border-color: transparent;
+    background-color: rgb(255, 252, 246, 0.6);
+    color: #7D8694;
+    border-radius: 5px;
+    min-width: 5vw;
+    min-height: 2vh;
+    max-width: 20vw; 
+  max-height: 10vh;
+  font-size: 1.2vw; 
+  padding: 0.3vh 1vw;
+
+  }
+  .btn:hover{
+    background-color: rgb(255, 252, 246);
+
+  }
+    /*Button About us*/
+  .btnab{
+    font-family: monospace, 'Andalé Mono';
+    border-color: transparent;
+    background-color: rgb(255, 252, 246, 0.6);
+    color: #7D8694;
+    border-radius: 5px;
+    min-width: 5vw;
+    min-height: 2vh;
+    max-width: 20vw; 
+  max-height: 10vh;
+  font-size: 1.2vw; 
+  padding: 0.3vh 1vw;
+
+  }
+  .btnab:hover{
+    background-color: rgb(255, 252, 246);
+
+  }
+    /*Button placement*/
+  .ab{
+  margin-left: auto;
+  margin-right: auto;
+ text-align: center;
+ align-self: center;
+}

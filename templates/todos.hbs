@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="/todos.css">
+</head>
+<body>
+    <h1>chai</h1>
+      <form action="/logout" method="post" class="logout">
+        <button type="submit" class="btnl">Logout</button>
+    </form>
+    <form action="/todo" method="post" class="form1">
+        <input type="text" name="task" placeholder="Write something..." required class="input">
+        <br>
+        <textarea name="description" placeholder="Add a description..." class="input"></textarea>
+        <br>
+        <button type="submit" class="btn">Add Task</button>
+    </form>
+    <dl class="listb">
+        {{#each todos}}
+        <table class="list">
+            <tr>
+            <td><dt> {{this.task}} <br> {{this.description}}  </dt></th>
+            
+             <td class="btnp"><form action="/todo/{{this._id}}?_method=DELETE" method="post" class="form2">
+                <button type="submit" class="delete">x</button></th>
+            </form>
+            </tr>
+            </table>
+        {{else}}
+            <dt>No tasks found.</dt>
+        {{/each}}
+    
+    </dl>
+  
+</body>
+</html>

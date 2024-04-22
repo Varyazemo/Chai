@@ -1,0 +1,127 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+    /*Page title*/
+  h1{
+    color: rgb(255, 252, 246);
+    font-family: monospace, 'Andalé Mono';
+    text-align: center;
+    font-size: 3.5vw ;
+    letter-spacing: 1.5vw;
+  }
+    /*The add task button*/
+  .btn{
+    font-family: monospace, 'Andalé Mono';
+    border-color: transparent;
+    background-color: rgb(255, 252, 246, 0.6);
+    color: #7D8694 ;
+    font-family: monospace, 'Andalé Mono';
+    border-radius: 5px;
+    min-width: 5vw;
+    min-height: 2vh;
+    max-width: 20vw; 
+  max-height: 10vh;
+  font-size: 1.2vw; 
+  padding: 0.3vh 1vw;
+
+  }
+  .btn:hover{
+    background-color: rgb(255, 252, 246);
+
+  }
+    /*The input boxes*/
+  .input{
+    background-color: rgb(255, 252, 246);
+    border: #7D8694;
+    color: #7D8694;
+    font-family: monospace, 'Andalé Mono';
+margin-bottom: 1vw;
+border-radius: 5px;
+width: 12.5vw;
+height: 6vh;
+font-size: 2.5vmin;
+padding: 0.2vmin;
+
+  }
+  ::placeholder{
+    color:#7D8694;
+    font-family: monospace, 'Andalé Mono';
+
+  }
+    /*The input boxes position*/
+  .form1{
+    margin-left: auto;
+    margin-right: auto;
+   text-align: center;
+   align-self: center;
+   font-family: monospace, 'Andalé Mono';
+margin-top: 1vw;
+
+  }
+    /*The delete button placement on each list element*/
+.delete{
+    font-family: monospace, 'Andalé Mono';
+    border-color: transparent;
+    background-color: rgb(255, 252, 246);
+    color: #7D8694 ;
+    font-family: monospace, 'Andalé Mono';
+    border-radius: 5px;
+    float: right;
+    min-width: 2vw;
+    min-height: 2vh;
+    max-width: 20vw; 
+  max-height: 10vh;
+  font-size: 1.2vw; 
+  padding: 0.3vh 0.3vw;
+
+
+}
+.delete:hover{
+    background-color: #DF9E74;
+    color: #fff7f3 ;
+}
+  /*The list elements*/
+  .list {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
+    font-family: monospace, 'Andalé Mono';
+    background-color: rgba(97, 124, 142, 0.7);
+    border-radius: 6px;
+    color: rgb(255, 252, 246);
+    width: 80%;
+    margin-bottom: 0.5vw;
+    font-size: 1.3vw;
+}
+/*Size of the tabledata, where the delete button is*/
+.btnp{
+  width: 1.2vw;
+}
+   /*logout button*/ 
+.btnl{
+  font-family: monospace, 'Andalé Mono';
+  border-color: transparent;
+  background-color: rgb(255, 252, 246, 0.6);
+  color: #7D8694 ;
+  font-family: monospace, 'Andalé Mono';
+  border-radius: 5px;
+  min-width: 5vw;
+  min-height: 1vh;
+  max-width: 20vw; 
+max-height: 10vh;
+font-size: 1.2vw; 
+padding: 0.1vh 0.7vw;
+}
+.btnl:hover{
+  background-color: rgb(255, 252, 246);
+
+}
+  /*Button placement*/
+.logout{
+  margin-left: auto;
+  margin-right: auto;
+ text-align: center;
+}

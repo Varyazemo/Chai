@@ -1,0 +1,64 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+  }
+  
+  /*The background of the text*/
+  .main{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(115, 141, 157, 0.2);
+    width: fit-content;
+  }
+  .main:hover{
+    background-color: rgba(115, 141, 157, 0.527);
+
+  }
+  /*The text on the page*/
+  p{
+    margin-bottom: 3.5vw;
+    margin-top: 3.5vw;
+    font-family: monospace, 'Andalé Mono';
+    font-weight: 200;
+    color: rgb(255, 252, 246);
+    margin-left: 1vw ;
+    margin-right: 1vw;
+    font-size: 1.3vw;
+  }
+  /*Page title*/
+  h1{
+    font-family: monospace, 'Andalé Mono';
+    text-align: center;
+    color: rgb(255, 252, 246);
+    letter-spacing: 2.5vw;
+    font-size: 3.5vw;
+
+  }
+    /*Button placement*/
+  .ret{
+    margin-left: auto;
+    margin-right: auto;
+   text-align: center;
+   align-self: center;
+  }
+    /*Button itself that sents users to the main page*/
+  .btn{
+    font-family: monospace, 'Andalé Mono';
+    border-color: transparent;
+    background-color: rgb(255, 252, 246, 0.6);
+    color: #7D8694;
+    border-radius: 5px;
+    min-width: 5vw;
+    min-height: 2vh;
+    max-width: 20vw; 
+  max-height: 10vh;
+  font-size: 1.2vw; 
+  padding: 0.3vh 1vw;
+  }
+  .btn:hover{
+    background-color: rgb(255, 252, 246);
+
+  }

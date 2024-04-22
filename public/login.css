@@ -1,0 +1,78 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+    /*Page title*/
+  h2{
+    color: rgb(255, 252, 246);
+    font-family: monospace, 'Andalé Mono';
+    text-align: center;
+    font-size: 3.5vw ;
+    letter-spacing: 1.5vw;
+  }
+    /*Username and password boxes*/
+  .input{
+    background-color: rgb(255, 252, 246);
+    border: #7D8694;
+    color: #7D8694;
+    font-family: monospace, 'Andalé Mono';
+    height: 30px;
+    border-radius: 5px;
+    width: 12.5vw;
+    height: 6vh;
+    font-size: 2.5vmin;
+    padding: 0.2vmin;
+    margin-bottom: 2.4vw;
+
+  }
+  ::placeholder{
+    color:#7D8694;
+    font-family: monospace, 'Andalé Mono';
+
+  }
+    /*The placement of the username and pass. form*/
+  form{
+    margin-top: 7vw;
+    margin-left: auto;
+    margin-right: auto;
+   text-align: center;
+   align-self: center;
+   font-family: monospace, 'Andalé Mono';
+
+
+  }
+    /*Submit button*/
+  .btn{
+    font-family: monospace, 'Andalé Mono';
+    border-color: transparent;
+    background-color: rgb(255, 252, 246, 0.6);
+    color: #7D8694 ;
+    font-family: monospace, 'Andalé Mono';
+    border-radius: 5px;
+    min-width: 5vw;
+    min-height: 2vh;
+    max-width: 20vw; 
+  max-height: 10vh;
+  font-size: 1.2vw; 
+  padding: 0.3vh 1vw;
+
+
+  }
+  .btn:hover{
+    background-color: rgb(255, 252, 246);
+
+  }
+    /*The text that offers user to visit the sign up page*/
+  h4{
+    margin-top: 8vw;
+    font-family: monospace, 'Andalé Mono';
+    color: rgb(255, 252, 246);
+    font-size: 1.3vw;
+    background-color: #7d869432;
+    text-align: center;
+  }
+    /*The link*/
+  a{
+    color: #C7DED8;
+  }

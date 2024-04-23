@@ -58,8 +58,8 @@ app.post("/signup",async (req,res)=>{
      // await is used to make the user wait until the js inserts all the data into the collection
      await collection.insertMany([data])
 
-    //a response of sending the user to the home page happens after the request has been completed
-     res.render("todos")
+    //a response of sending the user to the login page happens after the request has been completed
+     res.render("login")
 })
 
 //characterizes actions in the login form

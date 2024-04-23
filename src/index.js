@@ -26,12 +26,12 @@ app.set("view engine", "hbs")
 app.set("views", TPath)
 app.use(express.urlencoded({extended:false}))
 
-// Configure session middleware
+// So the app can start a session, after the user is logged in
 app.use(session({
     secret: '123',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false } // Set to true if using HTTPS
+    cookie: { secure: false } 
 }));
 
 // request n response, getting the login and signup pages

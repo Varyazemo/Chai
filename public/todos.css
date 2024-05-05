@@ -2,16 +2,16 @@ body {
     background-image: url("https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   } 
     /*Page title*/
   h1{
     color: rgb(255, 252, 246);
     font-family: monospace, 'Andalé Mono';
     text-align: center;
-    font-size: 3.5vw ;
-    letter-spacing: 1.5vw;
   }
-    /*The add task button*/
+    /*The add button*/
   .btn{
     font-family: monospace, 'Andalé Mono';
     border-color: transparent;
@@ -21,10 +21,10 @@ body {
     border-radius: 5px;
     min-width: 5vw;
     min-height: 2vh;
-    max-width: 20vw; 
+    max-width: 50vw; 
   max-height: 10vh;
-  font-size: 1.2vw; 
   padding: 0.3vh 1vw;
+  margin-bottom: 2vh;
 
   }
   .btn:hover{
@@ -39,9 +39,8 @@ body {
     font-family: monospace, 'Andalé Mono';
 margin-bottom: 1vw;
 border-radius: 5px;
-width: 12.5vw;
-height: 6vh;
-font-size: 2.5vmin;
+min-width: 12.5vw;
+max-width: 50vw;
 padding: 0.2vmin;
 
   }
@@ -57,7 +56,7 @@ padding: 0.2vmin;
    text-align: center;
    align-self: center;
    font-family: monospace, 'Andalé Mono';
-margin-top: 1vw;
+
 
   }
     /*The delete button placement on each list element*/
@@ -73,7 +72,6 @@ margin-top: 1vw;
     min-height: 2vh;
     max-width: 20vw; 
   max-height: 10vh;
-  font-size: 1.2vw; 
   padding: 0.3vh 0.3vw;
 
 
@@ -93,8 +91,7 @@ margin-top: 1vw;
     border-radius: 6px;
     color: rgb(255, 252, 246);
     width: 80%;
-    margin-bottom: 0.5vw;
-    font-size: 1.3vw;
+   
 }
 /*Size of the tabledata, where the delete button is*/
 .btnp{
@@ -111,8 +108,7 @@ margin-top: 1vw;
   min-width: 5vw;
   min-height: 1vh;
   max-width: 20vw; 
-max-height: 10vh;
-font-size: 1.2vw; 
+max-height: 10vh; 
 padding: 0.1vh 0.7vw;
 }
 .btnl:hover{
@@ -125,7 +121,7 @@ padding: 0.1vh 0.7vw;
   margin-right: auto;
  text-align: center;
 }
-/*Add something phrase*/
+/*Place of the text "Add something*/
 .as{
   font-family: monospace, 'Andalé Mono';
   margin-left: auto;
@@ -133,4 +129,87 @@ padding: 0.1vh 0.7vw;
   text-align: center;
   align-self: center;
   color: rgb(255, 252, 246);
+
+}
+/*To make the application responsive, lets adjust some elements, depeneding on the page size*/
+/*Size of elements for screens of 600px width and less*/
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 8vw ;
+    letter-spacing: 1.5vw;
+  }
+  .btn{
+    font-size: 3.5vw; 
+  }
+  .input{
+    height: 4vh;
+  font-size: 2.5vmin;
+  }
+  .form1{
+    margin-top: 5vw;
+  }
+  .delete{
+    font-size: 3vw; 
+  }
+  .list{
+    margin-bottom: 2vw;
+    font-size: 3vw;
+  }
+  .btnl{
+    font-size: 3.5vw;
+  }
+}
+/*Size of elements for screens with the width between 601px and 1024px*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  h1{
+    font-size: 9vw ;
+    letter-spacing: 1.5vw;
+  }
+  .btn{
+    font-size: 3.5vw; 
+  }
+  .input{
+    height: 4vh;
+  font-size: 2.5vmin;
+  }
+  .form1{
+    margin-top: 5vw;
+  }
+  .delete{
+    font-size: 3vw; 
+  }
+  .list{
+    margin-bottom: 2vw;
+    font-size: 3vw;
+  }
+  .btnl{
+    font-size: 3.5vw;
+  }
+}
+/*Size of elements for screens of 1025px width or more*/
+@media screen and (min-width: 1025px) {
+h1{
+  font-size: 3.5vw ;
+  letter-spacing: 1.5vw;
+}
+.btn{
+  font-size: 1.2vw; 
+}
+.input{
+  height: 6vh;
+font-size: 2.5vmin;
+}
+.form1{
+  margin-top: 1vw;
+}
+.delete{
+  font-size: 1.2vw; 
+}
+.list{
+  margin-bottom: 0.5vw;
+  font-size: 1.3vw;
+}
+.btnl{
+  font-size: 1.2vw;
+}
 }

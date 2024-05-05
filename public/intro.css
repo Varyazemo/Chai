@@ -2,67 +2,89 @@ body {
     background-image: url("https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
+
+  
     /*Page title*/
   h1{
     font-family: monospace, 'Andalé Mono';
     text-align: center;
     color: rgb(255, 252, 246);
-    font-size: 3.5vw ;
-    letter-spacing: 3vw;
    
   }
     /*The table that the buttons are placed in*/
   table { 
     text-align : center ; 
     font-weight: bold; 
-    border-spacing: 8vw; 
       border-collapse: separate;
       margin-left: auto;
      margin-right: auto;
+     border-spacing: 8vw;
   } 
-    /*Buttons login n signup*/
-  .btn{
-    font-family: monospace, 'Andalé Mono';
-    border-color: transparent;
-    background-color: rgb(255, 252, 246, 0.6);
-    color: #7D8694;
-    border-radius: 5px;
-    min-width: 5vw;
-    min-height: 2vh;
-    max-width: 20vw; 
+ /* Buttons login,signup,about us */
+.btn, .btnab {
+  font-family: monospace, 'Andalé Mono';
+  border-color: transparent;
+  background-color: rgba(255, 252, 246, 0.6);
+  color: #7D8694;
+  border-radius: 5px;
+  min-width: 5vw;
+  min-height: 2vh;
+  max-width: 50vw;
   max-height: 10vh;
-  font-size: 1.2vw; 
   padding: 0.3vh 1vw;
+}
 
-  }
-  .btn:hover{
-    background-color: rgb(255, 252, 246);
-
-  }
-    /*Button About us*/
-  .btnab{
-    font-family: monospace, 'Andalé Mono';
-    border-color: transparent;
-    background-color: rgb(255, 252, 246, 0.6);
-    color: #7D8694;
-    border-radius: 5px;
-    min-width: 5vw;
-    min-height: 2vh;
-    max-width: 20vw; 
-  max-height: 10vh;
-  font-size: 1.2vw; 
-  padding: 0.3vh 1vw;
-
-  }
-  .btnab:hover{
-    background-color: rgb(255, 252, 246);
-
-  }
-    /*Button placement*/
+.btn:hover, .btnab:hover {
+  background-color: rgb(255, 252, 246);
+}
   .ab{
   margin-left: auto;
   margin-right: auto;
  text-align: center;
  align-self: center;
+}
+
+/*To make the application responsive, lets adjust some elements, depeneding on the page size*/
+/*Size of elements for screens of 600px width and less*/
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 9vw; 
+    letter-spacing: 1vw;
+}
+
+.btn, .btnab {
+  margin-top: 4vh;
+    font-size: 3.5vw; 
+}
+table{
+  margin-top: 15vh;
+}
+}
+/*Size of elements for screens with the width between 601px and 1024px*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 8vw;
+    letter-spacing: 1.5vw; 
+}
+
+.btn, .btnab {
+    font-size: 3vw; 
+}
+table{
+  margin-top: 15vh;
+}
+}
+/*Size of elements for screens of 1025px width or more*/
+@media screen and (min-width: 1025px) {
+  h1 {
+    font-size: 3.5vw;
+    letter-spacing: 3vw; 
+}
+
+.btn, .btnab {
+    font-size: 1.2vw; 
+}
 }

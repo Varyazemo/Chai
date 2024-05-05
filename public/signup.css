@@ -2,14 +2,14 @@ body {
     background-image: url("https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   } 
     /*Page title*/
   h2{
     color: rgb(255, 252, 246);
     font-family: monospace, 'Andalé Mono';
     text-align: center;
-    font-size: 3.5vw ;
-    letter-spacing: 1.5vw;
   }
     /*The username and password boxes*/
   .input{
@@ -17,11 +17,9 @@ body {
     border: #7D8694;
     color: #7D8694;
     font-family: monospace, 'Andalé Mono';
-    height: 30px;
     border-radius: 5px;
-    width: 12.5vw;
-    height: 6vh;
-    font-size: 2.5vmin;
+    min-width: 12.5vw;
+    max-width: 40vw;
     padding: 0.2vmin;
     margin-bottom: 2.4vw;
 
@@ -33,7 +31,6 @@ body {
   }
     /*The form with the user. and pass. boxes*/
   form{
-    margin-top: 7vw;
     margin-left: auto;
     margin-right: auto;
    text-align: center;
@@ -51,9 +48,8 @@ body {
     border-radius: 5px;
     min-width: 5vw;
     min-height: 2vh;
-    max-width: 20vw; 
+    max-width: 50vw; 
   max-height: 10vh;
-  font-size: 1.2vw; 
   padding: 0.3vh 1vw;
   }
   .btn:hover{
@@ -62,14 +58,78 @@ body {
   }
     /*The text that lets users go to the login page*/
   h4{
-    margin-top: 8vw;
     font-family: monospace, 'Andalé Mono';
     color: rgb(255, 252, 246);
-    font-size: 1.3vw;
     background-color: #7d869432;
     text-align: center;
   }
     /*link*/
   a{
     color: #C7DED8;
+  }
+  /*To make the application responsive, lets adjust some elements, depeneding on the page size*/
+/*Size of elements for screens of 600px width and less*/
+  @media screen and (max-width: 600px) {
+    h2{
+      font-size: 8vw ;
+      letter-spacing: 1vw;
+    }
+    .input{
+      font-size: 4vmin;
+      height: 4vh;
+    }
+    .btn{
+      margin-top: 4vh;
+      font-size: 3.8vw;
+    }
+    h4{
+      font-size: 4vw;
+      margin-top: 20vh;
+    }
+    form{
+      margin-top: 20vh;
+    }
+  }
+  /*Size of elements for screens with the width between 601px and 1024px*/
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    h2{
+      font-size: 8vw ;
+      letter-spacing: 1vw;
+    }
+    .input{
+      font-size: 4vmin;
+      height: 4vh;
+    }
+    .btn{
+      margin-top: 2vh;
+      font-size: 4vw;
+    }
+    h4{
+      font-size: 4vw;
+      margin-top: 20vh;
+    }
+    form{
+      margin-top: 20vh;
+    }
+  }
+  /*Size of elements for screens of 1025px width or more*/
+  @media screen and (min-width: 1025px) {
+    h2{
+      font-size: 3.5vw ;
+      letter-spacing: 1.5vw;
+    }
+    .input{
+      font-size: 2.5vmin;
+      height: 5vh;
+    }
+    .btn{
+      font-size: 1.2vw;
+    }
+    h4{
+      margin-top: 8vw;
+      font-size: 1.3vw;
+    }
+    form{
+      margin-top: 7vw;
+    }
   }
